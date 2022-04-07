@@ -3,9 +3,16 @@ SPA - Single Page Application, desenvolvido com Vue JS - Personal Site.
 </br>
 O que estou estudando? 
 </br>
+</br>
+
+<details align="left">
+<summary> <b> Preview do projeto </b></summary>
+<br>
 https://renatamoss.vercel.app/
-</br>
-</br>
+
+[![img_currency](https://github.com/renatamoss/currency_app/blob/main/public/gif-currency.gif)](https://renatamoss.vercel.app//)
+  
+</details>
 
 <details align="left">
 <summary> <b> Tecnologias utilizadas </b></summary>
@@ -19,7 +26,7 @@ https://renatamoss.vercel.app/
 </details>
 
 <details align="left">
-<summary> <b> Setup do Projeto </b></summary>
+<summary> <b> Setup do projeto </b></summary>
   
 <br>
   
