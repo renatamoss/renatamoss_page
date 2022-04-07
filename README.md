@@ -1,7 +1,6 @@
 <samp>
 SPA - Single Page Application, desenvolvido com Vue JS - Personal Site. 
 </br>
-</br>
 O que estou estudando? 
 </br>
 https://renatamoss.vercel.app/
@@ -9,19 +8,28 @@ https://renatamoss.vercel.app/
 </br>
 
 <details align="left">
-<summary> <b> Project setup </b></summary>
+<summary> <b> Tecnologias utilizadas </b></summary>
+<br>
+
+* NPM;
+* Vue CLI;
+* SASS;
+* Vercel
+  
+</details>
+
+<details align="left">
+<summary> <b> Setup do Projeto </b></summary>
   
 <br>
   
-**A Vue.js project**
-</samp>
 
 ``` bash
 # install dependencies
 npm install
 
 # serve with hot reload at localhost:8080
-npm run dev
+npm run serve
 
 # build for production with minification
 npm run build
