@@ -23,5 +23,4 @@ export default {
 @import "@/style/main.scss";
 @import "@/style/_variables.scss";
 @import "@/style/_reset.scss";
-
 </style>
