@@ -2,7 +2,7 @@
 SPA - Single Page Application, desenvolvido com Vue JS - Personal Site. 
 </br>
 </br>
-O que estou estudando? 
+O que estou estudando?
 </br>
 https://renatamoss.vercel.app/
 </br>
