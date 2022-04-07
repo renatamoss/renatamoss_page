@@ -1,0 +1,25 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  color: var(--primary-text-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: var(--fontsize-default);
+  line-height: 1.5rem;
+}
+
+a,
+button,
+button:hover {
+  color: var(--color-link);
+  cursor: pointer;
+  transition: all .1s linear;
+}
