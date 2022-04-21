@@ -42,9 +42,6 @@ export default {
   justify-content: center;
 
   background-color: var(--button-bg-color-1);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
-    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
-    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   color: var(--secundary-text-color);
   border-radius: 0.4rem;
   font-size: 0.8rem;
@@ -60,12 +57,21 @@ export default {
   padding-left: 0.5rem;
 }
 
-.button__item--projects {
-  font-size: .8rem;
+.button__item--projects,
+.button__item--aboutme {
+  font-size: 0.8rem;
   height: 3rem;
   margin-top: 1rem;
   padding-left: 0.5rem;
   width: 18rem;
+}
+
+.button__item--aboutme {
+  background-color: var(--button-bg-color-6);
+}
+
+.button__item--projects {
+  background-color: var(--button-bg-color-1);
 }
 
 .button__item--allprojects {
@@ -93,8 +99,8 @@ export default {
     transform: scale(1.03);
   }
 
+  .button__item--aboutme:hover,
   .button__item--projects:hover {
-    background-color: var(--button-bg-color-hover-3);
     transform: scale(1.03);
   }
 
@@ -110,6 +116,7 @@ export default {
 }
 
 @media (max-width: 992px) {
+  .button__item--aboutme,
   .button__item--projects {
     display: none;
   }

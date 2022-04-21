@@ -33,7 +33,7 @@ export default {
   font-family: "Righteous", cursive;
   font-size: var(--font-size-3);
   font-weight: lighter;
-  height: 100%;
+  height: 100px;
   letter-spacing: 0.06rem;
   line-height: 2rem;
   width: 360px;

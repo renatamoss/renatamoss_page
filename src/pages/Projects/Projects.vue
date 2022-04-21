@@ -1,6 +1,10 @@
 <template>
   <div class="projects" id="projects">
-    <Title title="Projetos" subtitle="O que estou desenvolvendo?" />
+    <Title
+      title="Projetos"
+      subtitle="O que estou desenvolvendo?"
+      subtitleClass="subtitleProjects"
+    />
     <ProjectsGroup />
     <div class="projects__back-desktop">
       <Button

@@ -14,9 +14,16 @@
           descriptionImage="Topic drawing"
         />
         <Button
+          className="button__item button__item--aboutme"
+          href="#aboutme"
+          title="Sobre Mim"
+          target="_self"
+          symbol="bi bi-plus-circle-fill"
+        />
+        <Button
           className="button__item button__item--projects"
           href="#projects"
-          title="O que estou desenvolvendo?"
+          title="Conheça meus Projetos"
           target="_self"
           symbol="bi bi-plus-circle-fill"
         />
@@ -58,8 +65,6 @@ export default {
 
     background-color: var(--bg-color-2);
     border-radius: 0.4rem;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     height: 100%;
     margin: auto;
     padding: 4rem 0;

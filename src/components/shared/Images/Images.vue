@@ -42,6 +42,12 @@ export default {
     width: 100%;
   }
 
+  .image__default--photo-renata {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    width: 50%;
+  }
+
   .image__default--home-study {
     padding-top: 1rem;
     width: 50%;
@@ -52,7 +58,7 @@ export default {
   }
 
   .image__default--banner-page {
-        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
       rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     width: 60%;
   }
@@ -65,7 +71,7 @@ export default {
 }
 
 @media (max-width: 1200px) {
-   .image__default--banner-page {
+  .image__default--banner-page {
     min-width: 90%;
   }
 }
@@ -75,7 +81,12 @@ export default {
     max-width: 70%;
   }
 
-   .image__default--banner-page {
+  .image__default--photo-renata {
+    margin-bottom: 2rem;
+    max-width: 40%;
+  }
+
+  .image__default--banner-page {
     min-width: 100%;
   }
 }
