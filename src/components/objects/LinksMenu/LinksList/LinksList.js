@@ -1,7 +1,7 @@
 export default [
     {
         class: "social__link-item--linkedin",
-        href: "https://www.linkedin.com/in/renata-moss-8b21ba184",
+        href: "https://www.linkedin.com/in/renatamoss/",
         title: "Linkedin",
         icon: "bi bi-linkedin",
     },
