@@ -40,7 +40,10 @@ export default {
   width: 100%;
   z-index: 1;
 
-  .projects__back-desktop {
+  margin-top: -8rem;
+  padding: 3rem 0;
+
+  &__back-desktop {
     display: flex;
     justify-content: right;
 
@@ -51,15 +54,19 @@ export default {
     right: 0;
     z-index: 9999;
   }
-
-  @media (max-width: 1200px) {
-    .projects__back-desktop {
-      margin-right: 5%;
-    }
+}
+@media (max-width: 1200px) {
+  .projects__back-desktop {
+    margin-right: 5%;
   }
+}
 
-  @media (max-width: 992px) {
-    .projects__back-desktop {
+@media (max-width: 992px) {
+  .projects {
+    margin-top: 0;
+    padding: 0;
+
+    &__back-desktop {
       display: none;
     }
   }

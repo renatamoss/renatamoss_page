@@ -10,8 +10,8 @@
         </p>
         <p>
           Durante a minha experiência profissional, já fiz muitas coisas que não
-          estavam ligadas à criatividade, mas que contribuíram muito para que me
-          tornasse quem sou hoje.
+          estavam ligadas à area de tecnologia, mas que contribuíram muito para
+          que me tornasse quem sou hoje.
         </p>
         <p>
           Em minha jornada tech, concluí trilhas de formação de Front-End, e
@@ -49,10 +49,15 @@ export default {
 <style lang="scss" scoped>
 .aboutme {
   background-color: var(--bg-color-5);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   height: 100vh;
   color: var(--secundary-text-color);
   width: 100%;
   z-index: 1;
+
+  margin-top: -8rem;
+  padding: 3rem 0;
 
   &__container {
     display: flex;
@@ -60,8 +65,7 @@ export default {
     justify-content: space-evenly;
     align-items: center;
 
-    margin: auto;
-    padding: 4rem 0;
+    margin: 2rem auto;
     width: 60%;
 
     .aboutme__box {
@@ -83,8 +87,7 @@ export default {
 @media (max-width: 1200px) {
   .aboutme {
     &__container {
-      padding-top: 4rem;
-      width: 100%;
+      width: 90%;
     }
   }
 }
@@ -92,6 +95,7 @@ export default {
 @media (max-width: 992px) {
   .aboutme {
     height: 100%;
+    margin-top: 0;
     padding: 0;
 
     .aboutme__container {
@@ -100,6 +104,7 @@ export default {
       justify-content: center;
       margin: 0 auto;
       padding: 0;
+      width: 100%;
 
       .aboutme__box {
         padding: 1rem 1rem 0 1rem;

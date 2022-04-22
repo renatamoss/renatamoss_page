@@ -9,9 +9,7 @@ O que estou estudando?
 <summary> <b> Preview do projeto </b></summary>
 <br>
 https://renatamoss.vercel.app/
-
-[![img_site-renatamoss](https://github.com/renatamoss/renatamoss_page/blob/main/public/renatamoss_gif.gif)](https://renatamoss.vercel.app//)
-  
+ 
 </details>
 
 <details align="left">
