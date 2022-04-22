@@ -23,7 +23,7 @@
         <Button
           className="button__item button__item--projects"
           href="#projects"
-          title="Conheça meus Projetos"
+          title="Conheça Meus Projetos"
           target="_self"
           symbol="bi bi-plus-circle-fill"
         />
@@ -62,9 +62,7 @@ export default {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
-    background-color: var(--bg-color-2);
-    border-radius: 0.4rem;
+    
     height: 100%;
     margin: auto;
     padding: 4rem 0;
@@ -89,7 +87,7 @@ export default {
 
 @media (max-width: 992px) {
   .home {
-    height: 70vh;
+    height: 90vh;
     padding: 0;
 
     .home__container {

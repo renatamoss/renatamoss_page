@@ -1,8 +1,8 @@
 <template>
   <div class="projects" id="projects">
     <Title
-      title="Projetos"
-      subtitle="O que estou desenvolvendo?"
+      title="Meus Projetos"
+      subtitle="O que estou estudando?"
       subtitleClass="subtitleProjects"
     />
     <ProjectsGroup />

@@ -95,6 +95,7 @@ export default {
 
   .project__total {
     color: var(--third-text-color);
+    font-weight: bold;
     padding: 0.5rem 1rem 1rem 1rem;
   }
 }

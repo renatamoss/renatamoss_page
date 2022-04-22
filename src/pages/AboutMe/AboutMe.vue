@@ -9,15 +9,14 @@
           tecnologia.
         </p>
         <p>
-          Durante a minha experiência profissional já fiz muitas coisas que não
-          estavam ligadas à criatividade, mas que contribuíram muito para que eu
-          seja quem sou hoje.
+          Durante a minha experiência profissional, já fiz muitas coisas que não
+          estavam ligadas à criatividade, mas que contribuíram muito para que me
+          tornasse quem sou hoje.
         </p>
         <p>
-          Em minha jornada tech concluí trilhas de formação de Front-End e
+          Em minha jornada tech, concluí trilhas de formação de Front-End, e
           atualmente estou desenvolvendo com Vue Js, HTML, CSS, SASS, Javascript
-          e Bootstrap. Também já desenvolvi projetos pessoais com conhecimentos
-          básicos em PHP, SQL e MySQL.
+          e Bootstrap.
         </p>
         <p>
           Sou uma pessoa simples e que acredita muito no lado positivo das
@@ -60,7 +59,7 @@ export default {
     justify-content: space-evenly;
     align-items: center;
 
-    margin: auto;
+    margin: 3rem auto 0;
     width: 60%;
 
     .aboutme__box {
@@ -72,7 +71,7 @@ export default {
 
       p {
         font-size: 1rem;
-        margin: 1rem 0;
+        margin: 0.5rem 0;
         text-align: right;
       }
     }
@@ -80,8 +79,13 @@ export default {
 }
 
 @media (max-width: 1200px) {
-  .aboutme__container {
-    width: 90%;
+  .aboutme {
+    &__container {
+      .aboutme__box {
+        width: 100%;
+        padding: 0 1rem;
+      }
+    }
   }
 }
 
@@ -94,10 +98,11 @@ export default {
       border-radius: 0;
       flex-direction: column;
       justify-content: center;
+          margin: 0 auto ;
       width: 100%;
 
       .aboutme__box {
-        padding: 1rem 0.5rem 0 0.5rem;
+        padding: 1rem 1rem 0 1rem;
 
         p {
           text-align: left;

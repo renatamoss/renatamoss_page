@@ -61,9 +61,9 @@ export default {
 .button__item--aboutme {
   font-size: 0.8rem;
   height: 3rem;
-  margin-top: 1rem;
+  margin-top: .5rem;
   padding-left: 0.5rem;
-  width: 18rem;
+  width: 15rem;
 }
 
 .button__item--aboutme {
@@ -115,10 +115,10 @@ export default {
   }
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .button__item--aboutme,
   .button__item--projects {
     display: none;
-  }
-}
+  } */
+/* } */
 </style>

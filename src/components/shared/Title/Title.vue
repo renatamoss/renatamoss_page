@@ -40,7 +40,7 @@ export default {
   .subtitleAboutme,
   .subtitleProjects {
     font-size: 1.2rem;
-    font-weight: lighter;
+    font-weight: bold;
     margin-top: 0.5rem;
     text-align: center;
   }
