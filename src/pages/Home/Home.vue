@@ -87,7 +87,7 @@ export default {
 
 @media (max-width: 992px) {
   .home {
-    height: 90vh;
+    height: 80vh;
     padding: 0;
 
     .home__container {

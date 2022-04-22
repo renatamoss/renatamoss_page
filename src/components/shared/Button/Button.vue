@@ -59,20 +59,14 @@ export default {
 
 .button__item--projects,
 .button__item--aboutme {
+  background-color: var(--button-bg-color-1);
   font-size: 0.8rem;
   height: 3rem;
-  margin-top: .5rem;
+  margin-top: 1rem;
   padding-left: 0.5rem;
   width: 15rem;
 }
 
-.button__item--aboutme {
-  background-color: var(--button-bg-color-6);
-}
-
-.button__item--projects {
-  background-color: var(--button-bg-color-1);
-}
 
 .button__item--allprojects {
   background-color: var(--button-bg-color-3);

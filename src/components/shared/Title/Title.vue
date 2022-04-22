@@ -47,7 +47,7 @@ export default {
 }
 
 .subtitleAboutme {
-  color: var(--title-color-1);
+  color: var(--title-color-2);
 }
 
 .subtitleProjects {
@@ -57,7 +57,7 @@ export default {
 @media (max-width: 992px) {
   .title__box {
     height: auto;
-    padding-top: 3rem;
+    padding-top: 1rem;
     max-width: 100%;
 
     .title {

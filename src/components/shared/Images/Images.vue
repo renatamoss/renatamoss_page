@@ -45,7 +45,7 @@ export default {
   .image__default--photo-renata {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
       rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    width: 50%;
+    width: 100%;
   }
 
   .image__default--home-study {
@@ -83,7 +83,6 @@ export default {
 
   .image__default--photo-renata {
     margin: 1rem 0 2rem 0;
-    max-width: 40%;
   }
 
   .image__default--banner-page {

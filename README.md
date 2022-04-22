@@ -10,7 +10,7 @@ O que estou estudando?
 <br>
 https://renatamoss.vercel.app/
 
-[![img_currency](https://github.com/renatamoss/currency_app/blob/main/public/gif-currency.gif)](https://renatamoss.vercel.app//)
+[![img_site-renatamoss](https://github.com/renatamoss/renatamoss_page/blob/main/public/renatamoss_gif.gif)](https://renatamoss.vercel.app//)
   
 </details>
 

@@ -50,6 +50,7 @@ export default {
 .aboutme {
   background-color: var(--bg-color-5);
   height: 100vh;
+  color: var(--secundary-text-color);
   width: 100%;
   z-index: 1;
 
@@ -59,7 +60,8 @@ export default {
     justify-content: space-evenly;
     align-items: center;
 
-    margin: 3rem auto 0;
+    margin: auto;
+    padding: 4rem 0;
     width: 60%;
 
     .aboutme__box {
@@ -67,7 +69,7 @@ export default {
       flex-direction: column;
       align-items: center;
       height: auto;
-      width: 70%;
+      width: 50%;
 
       p {
         font-size: 1rem;
@@ -81,10 +83,8 @@ export default {
 @media (max-width: 1200px) {
   .aboutme {
     &__container {
-      .aboutme__box {
-        width: 100%;
-        padding: 0 1rem;
-      }
+      padding-top: 4rem;
+      width: 100%;
     }
   }
 }
@@ -98,11 +98,12 @@ export default {
       border-radius: 0;
       flex-direction: column;
       justify-content: center;
-          margin: 0 auto ;
-      width: 100%;
+      margin: 0 auto;
+      padding: 0;
 
       .aboutme__box {
         padding: 1rem 1rem 0 1rem;
+        width: 100%;
 
         p {
           text-align: left;
