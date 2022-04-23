@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <p>Personal WebSite RM © 2022</p>
+    <p>Personal WebSite Renata Marques © 2022</p>
     <div class="footer__line-second">
       <div>built with</div>
       <img
@@ -30,7 +30,7 @@
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   color: var(--secundary-text-color);
-  font-size: var(--font-size-1);
+  font-size: .8rem;
   height: 100%;
   padding: 1rem 0;
   text-align: center;

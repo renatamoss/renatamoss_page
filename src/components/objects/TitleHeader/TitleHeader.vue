@@ -19,7 +19,7 @@
 }
 
 .header__subtitle {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bolder;
   letter-spacing: 0.07rem;
   line-height: 1.8rem;
@@ -53,7 +53,7 @@
   }
 
   .header__subtitle {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 </style>

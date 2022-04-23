@@ -106,9 +106,7 @@ export default {
 
     background-color: var(--bg-color-2);
     border-radius: 0.4rem;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     min-height: 300px;
     min-width: 300px;
     overflow: hidden;

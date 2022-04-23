@@ -50,7 +50,7 @@ export default {
 
 <style lang="scss" scoped>
 .home {
-  background-color: var(--bg-color-3);
+  background-color: var(--bg-color-4);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   height: 100vh;
@@ -99,12 +99,13 @@ export default {
       width: 100%;
 
       .home__box {
-        padding: 2rem;
+        padding: 1rem 2rem 0 2rem;
       }
     }
   }
 }
 
+/*max-height*/
 @media screen and (max-height: 700px) {
   .home {
     height: 100%;

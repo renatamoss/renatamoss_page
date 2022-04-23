@@ -2,7 +2,6 @@
   <h3 class="banner__text">{{ bannerText }}</h3>
 </template>
 
-
 <script>
 export default {
   data: () => {
@@ -32,25 +31,18 @@ export default {
 .banner__text {
   color: var(--title-color-6);
   font-family: "Righteous", cursive;
-  font-size: var(--font-size-3);
+  font-size: 1.4rem;
   font-weight: lighter;
-  height: 100px;
+  height: 68px;
   letter-spacing: 0.06rem;
   line-height: 2rem;
   max-width: 360px;
 }
 
-@media (max-width: 992px) {
-  .banner__text {
-    font-size: var(--font-size-2);
-    height: 64px;
-  }
-}
 @media (max-width: 576px) {
   .banner__text {
     font-size: 1.2rem;
     line-height: 1.3;
-    /* max-width: 300px; */
   }
 }
 </style>

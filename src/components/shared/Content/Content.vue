@@ -33,7 +33,7 @@ export default {
 <style lang="scss" scoped>
 .content__box {
   color: var(--primary-text-color);
-  font-size: var(--fontsize-default);
+  font-size: 1rem;
   height: 100%;
   padding: 0 1rem;
   width: 100%;
@@ -63,12 +63,8 @@ export default {
 
 @media (max-width: 576px) {
   .content__box {
-    .content__title {
-      font-size: 0.9rem;
-    }
-    .content__subtitle {
-      font-size: 0.9rem;
-    }
+    .content__title,
+    .content__subtitle,
     .content__text {
       font-size: 0.9rem;
     }

@@ -26,12 +26,12 @@ export default {
 <style lang="scss" scoped>
 .title__box {
   height: auto;
-  padding-top: 7rem;
+  padding-top: 8rem;
   width: 100%;
 
   .title {
     color: var(--title-color-6);
-    font-size: var(--font-size-3);
+    font-size: 1.4rem;
     font-weight: bold;
     margin-top: 2rem;
     text-align: center;
@@ -40,14 +40,14 @@ export default {
   .subtitleAboutme,
   .subtitleProjects {
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: bolder;
     margin-top: 0.5rem;
     text-align: center;
   }
-}
 
-.subtitleAboutme {
-  color: var(--title-color-2);
+  .subtitleAboutme {
+    color: var(--title-color-2);
+  }
 }
 
 .subtitleProjects {
@@ -59,10 +59,6 @@ export default {
     height: auto;
     padding-top: 1rem;
     max-width: 100%;
-
-    .title {
-      font-size: var(--font-size-2);
-    }
   }
 }
 

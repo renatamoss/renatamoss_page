@@ -51,12 +51,6 @@ export default {
   text-align: center;
 }
 
-.button__item--github,
-.button__item--preview {
-  padding-left: 0.5rem;
-  width: 7rem;
-}
-
 .button__item--projects,
 .button__item--aboutme {
   background-color: var(--button-bg-color-1);
@@ -68,21 +62,31 @@ export default {
 
 .button__item--allprojects {
   background-color: var(--button-bg-color-3);
-  margin: 0 auto 4rem auto;
+  margin: 0 auto 3rem auto;
   padding-left: 0.5rem;
   width: 7rem;
 }
 
-.button__item--back {
+.button__item--github,
+.button__item--preview {
+  padding-left: 0.5rem;
+  width: 7rem;
+}
+
+.button__item--back-home,
+.button__item--back-header {
   background-color: var(--button-bg-color-3);
-
-
   height: 3rem;
   margin: 0;
   width: 3rem;
   opacity: 0.6;
 }
 
+.button__item--back-header {
+  display: none;
+}
+
+/*hover*/
 @media (min-width: 992px) {
   .button__item--github:hover {
     background-color: var(--button-bg-color-hover-1);
@@ -110,23 +114,36 @@ export default {
   }
 }
 
+/*display button back home*/
+@media (max-width: 992px) {
+  .button__item--back-home {
+    display: none;
+  }
+  .button__item--back-header {
+    display: flex;
+  }
+}
+
+/*responsive size button*/
 @media (max-width: 576px) {
   .button__item {
     font-size: 0.7rem;
   }
 
-  /* .button__item--aboutme,
   .button__item--projects {
-    height: 2rem;
-    width: 14rem;
-  } */
+    margin-top: 0.5rem;
+  }
 
   .button__item--allprojects {
     width: 6rem;
   }
+}
 
-  .button__item--projects {
-    margin-top: 0.5rem;
+/*max-heigth*/
+@media screen and (max-height: 700px) {
+  .button__item--projects,
+  .button__item--aboutme {
+    width: 18rem;
   }
 }
 </style>

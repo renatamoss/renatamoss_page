@@ -52,10 +52,14 @@ export default {
     padding-left: 1rem;
     padding-right: 1rem;
     width: 100%;
+  }
+}
 
+@media (max-width: 576px) {
+  .search__container {
     .search__input {
       &::placeholder {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
       }
     }
   }

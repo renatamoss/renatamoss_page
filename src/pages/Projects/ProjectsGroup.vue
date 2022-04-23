@@ -93,6 +93,7 @@ export default {
 
 <style lang="scss" scoped>
 .project__container {
+    background-color: var(--bg-color-4);
   text-align: center;
   width: 100%;
 
@@ -104,10 +105,10 @@ export default {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 576px) {
   .project__container {
     .project__total {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
   }
 }
