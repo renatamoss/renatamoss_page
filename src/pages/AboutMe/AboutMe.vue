@@ -9,14 +9,13 @@
           tecnologia.
         </p>
         <p>
-          Durante a minha experiência profissional, já fiz muitas coisas que não
-          estavam ligadas à area de tecnologia, mas que contribuíram muito para
-          que me tornasse quem sou hoje.
+          Em minha jornada tech, concluí trilhas de formação de Front-End, e
+          atualmente estou desenvolvendo com Vue Js, HTML, CSS, SASS, JavaScript
+          e Bootstrap.
         </p>
         <p>
-          Em minha jornada tech, concluí trilhas de formação de Front-End, e
-          atualmente estou desenvolvendo com Vue Js, HTML, CSS, SASS, Javascript
-          e Bootstrap.
+          Também tenho conhecimentos das tecnologias Gimp, Figma, Heroku e
+          Vercel. E já desenvolvi projetos pessoais com PHP, SQL e MySQL.
         </p>
         <p>
           Sou uma pessoa simples e que acredita muito no lado positivo das

@@ -37,7 +37,7 @@ export default {
   height: 100px;
   letter-spacing: 0.06rem;
   line-height: 2rem;
-  width: 360px;
+  max-width: 360px;
 }
 
 @media (max-width: 992px) {
@@ -50,7 +50,7 @@ export default {
   .banner__text {
     font-size: 1.2rem;
     line-height: 1.3;
-    max-width: 300px;
+    /* max-width: 300px; */
   }
 }
 </style>

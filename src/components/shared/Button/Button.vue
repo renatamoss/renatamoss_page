@@ -54,7 +54,7 @@ export default {
 .button__item--github,
 .button__item--preview {
   padding-left: 0.5rem;
-    width: 7rem;
+  width: 7rem;
 }
 
 .button__item--projects,
@@ -75,6 +75,8 @@ export default {
 
 .button__item--back {
   background-color: var(--button-bg-color-3);
+
+
   height: 3rem;
   margin: 0;
   width: 3rem;
@@ -113,11 +115,11 @@ export default {
     font-size: 0.7rem;
   }
 
-  .button__item--aboutme,
+  /* .button__item--aboutme,
   .button__item--projects {
     height: 2rem;
     width: 14rem;
-  }
+  } */
 
   .button__item--allprojects {
     width: 6rem;
@@ -126,6 +128,5 @@ export default {
   .button__item--projects {
     margin-top: 0.5rem;
   }
-
 }
 </style>

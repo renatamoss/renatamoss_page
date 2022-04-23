@@ -67,7 +67,7 @@ export default {
 
     height: 100%;
     margin: auto;
-    padding: 4rem 0;
+    padding: 2rem 0;
     width: 60%;
 
     .home__box {
@@ -90,6 +90,7 @@ export default {
 @media (max-width: 992px) {
   .home {
     padding: 0;
+    height: 80vh;
 
     .home__container {
       border-radius: 0;
@@ -98,9 +99,15 @@ export default {
       width: 100%;
 
       .home__box {
-        padding: 1rem 0.5rem 0 0.5rem;
+        padding: 1rem;
       }
     }
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .home {
+    height: 100%;
   }
 }
 </style>
