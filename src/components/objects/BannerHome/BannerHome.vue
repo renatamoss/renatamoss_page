@@ -8,7 +8,8 @@ export default {
   data: () => {
     return {
       bannerText: "",
-      bannerPhrase: "Olá! Meu nome é Renata e seja bem-vindo(a) ao meu Portfólio!",
+      bannerPhrase:
+        "Olá! Meu nome é Renata e seja bem-vindo(a) ao meu Portfólio!",
       bannerSpeed: 100,
       charIndex: 0,
     };
@@ -37,13 +38,19 @@ export default {
   letter-spacing: 0.06rem;
   line-height: 2rem;
   width: 360px;
-  
 }
 
 @media (max-width: 992px) {
   .banner__text {
     font-size: var(--font-size-2);
     height: 64px;
+  }
+}
+@media (max-width: 576px) {
+  .banner__text {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    max-width: 300px;
   }
 }
 </style>

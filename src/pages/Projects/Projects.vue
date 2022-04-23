@@ -6,14 +6,6 @@
       subtitleClass="subtitleProjects"
     />
     <ProjectsGroup />
-    <div class="projects__back-desktop">
-      <Button
-        class="button__item button__item--back"
-        href="#home"
-        title="Voltar"
-        symbol="bi bi-arrow-up-circle-fill"
-      />
-    </div>
   </div>
 </template>
 
@@ -21,13 +13,11 @@
 <script>
 import Title from "@/components/shared/Title/Title.vue";
 import ProjectsGroup from "./ProjectsGroup.vue";
-import Button from "@/components/shared/Button/Button.vue";
 
 export default {
   components: {
     Title,
     ProjectsGroup,
-    Button,
   },
 };
 </script>
@@ -65,10 +55,6 @@ export default {
   .projects {
     margin-top: 0;
     padding: 0;
-
-    &__back-desktop {
-      display: none;
-    }
   }
 }
 </style>

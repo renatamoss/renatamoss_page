@@ -32,7 +32,7 @@ export default {
   .title {
     color: var(--title-color-6);
     font-size: var(--font-size-3);
-    font-weight: bolder;
+    font-weight: bold;
     margin-top: 2rem;
     text-align: center;
   }
@@ -62,6 +62,19 @@ export default {
 
     .title {
       font-size: var(--font-size-2);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .title__box {
+    .title {
+      font-size: 1.2rem;
+    }
+
+    .subtitleAboutme,
+    .subtitleProjects {
+      font-size: 1rem;
     }
   }
 }

@@ -1,9 +1,7 @@
 <template>
   <div class="header__box">
     <h1 class="header__title">Renata Marques</h1>
-    <h2 class="header__subtitle">
-      Front-End Developer
-    </h2>
+    <h2 class="header__subtitle">Front-End Developer</h2>
   </div>
 </template>
 
@@ -12,7 +10,7 @@
 .header__title {
   color: var(--title-color-1);
   font-family: "Righteous", cursive;
-  font-size: var(--font-size-5);
+  font-size: 1.8rem;
   font-weight: lighter;
   letter-spacing: 0.06rem;
   line-height: 2rem;
@@ -21,7 +19,7 @@
 }
 
 .header__subtitle {
-  font-size: var(--fontsize-defaul);
+  font-size: 1rem;
   font-weight: bolder;
   letter-spacing: 0.07rem;
   line-height: 1.8rem;
@@ -37,15 +35,25 @@
 
     height: 50%;
   }
+}
 
+@media (max-width: 576px) {
   .header__title {
-    font-size: var(--font-size-5);
+    font-size: 1.6rem;
+  }
+
+  .header__subtitle {
+    font-size: 1rem;
   }
 }
 
-@media (max-width: 290px) {
+@media (max-width: 330px) {
+  .header__title {
+    font-size: 1.4rem;
+  }
+
   .header__subtitle {
-    font-size: var(--font-size-1);
+    font-size: 0.8rem;
   }
 }
 </style>

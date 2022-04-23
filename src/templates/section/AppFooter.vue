@@ -1,17 +1,20 @@
 <template>
   <footer class="footer">
-    <div>Personal WebSite RM © 2022 | built with</div>
-    <img
-      class="image__footer-item"
-      alt="Heart Image"
-      src="@/../public/images/favicon-heart.png"
-    />
-    <div>Vue.Js</div>
-    <img
-      class="image__footer-item"
-      alt="Vue Image"
-      src="@/../public/images/favicon-vue.png"
-    />
+    <p>Personal WebSite RM © 2022</p>
+    <div class="footer__line-second">
+      <div>built with</div>
+      <img
+        class="image__footer-item"
+        alt="Heart Image"
+        src="@/../public/images/favicon-heart.png"
+      />
+      <div>Vue.Js</div>
+      <img
+        class="image__footer-item"
+        alt="Vue Image"
+        src="@/../public/images/favicon-vue.png"
+      />
+    </div>
   </footer>
 </template>
 
@@ -37,11 +40,18 @@
     width: 1.5rem;
     padding: 0.3rem;
   }
+  &__line-second {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 0.5rem;
+  }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 576px) {
   .footer {
-    font-size: 0.7rem;
+    display: block;
+    font-size: 0.8rem;
   }
 }
 </style>

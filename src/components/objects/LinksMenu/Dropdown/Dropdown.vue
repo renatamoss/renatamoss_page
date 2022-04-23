@@ -89,15 +89,14 @@ export default {
       align-items: center;
       justify-content: center;
 
-      background-color: var(--button-bg-color-1);
-      border-radius: 0.4rem;
+      background-color: var(--bg-color-1);
       cursor: pointer;
       height: 100%;
-      width: 2.8rem;
+      width: 100%;
       z-index: 1;
 
       .toggle__menu ul {
-        width: 1.2rem;
+        width: 1.8rem;
       }
 
       .toggle__menu ul li {
@@ -111,30 +110,30 @@ export default {
         margin-bottom: 0px;
       }
     }
-
-    @keyframes links-come-down {
-      0% {
-        opacity: 0;
-        transform: translateY(-8rem);
-      }
-      50% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    .fade-links-enter,
-    .fade-links-enter-active {
-      animation: links-come-down 0.6s;
-    }
-
-    .fade-links-leave-to {
-      transition: all 0.2s ease-out;
-      opacity: 0;
-    }
   }
+}
+
+@keyframes links-come-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-8rem);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-links-enter,
+.fade-links-enter-active {
+  animation: links-come-down 0.6s;
+}
+
+.fade-links-leave-to {
+  transition: all 0.2s ease-out;
+  opacity: 0;
 }
 </style>
 

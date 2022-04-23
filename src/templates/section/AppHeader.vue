@@ -60,7 +60,7 @@ export default {
 
 @media (max-width: 992px) {
   .header {
-    height: 10rem;
+    height: 6rem;
     position: relative;
 
     &__container {

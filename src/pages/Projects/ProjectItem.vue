@@ -138,6 +138,11 @@ export default {
     padding: 0 1rem;
     min-width: 100%;
 
+    .project__painel {
+      min-width: 200px;
+      padding: 0.5rem;
+    }
+
     .project__content {
       padding-bottom: 4rem;
 

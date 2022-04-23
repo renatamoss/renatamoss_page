@@ -35,6 +35,7 @@ export default {
     width: 100%;
 
     &::placeholder {
+      font-size: 1rem;
       opacity: 0.5;
     }
   }
@@ -51,6 +52,12 @@ export default {
     padding-left: 1rem;
     padding-right: 1rem;
     width: 100%;
+
+    .search__input {
+      &::placeholder {
+        font-size: 0.8rem;
+      }
+    }
   }
 }
 </style>

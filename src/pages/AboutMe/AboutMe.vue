@@ -51,7 +51,7 @@ export default {
   background-color: var(--bg-color-5);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  height: 100vh;
+  height: 100%;
   color: var(--secundary-text-color);
   width: 100%;
   z-index: 1;
@@ -94,7 +94,6 @@ export default {
 
 @media (max-width: 992px) {
   .aboutme {
-    height: 100%;
     margin-top: 0;
     padding: 0;
 
@@ -112,6 +111,18 @@ export default {
 
         p {
           text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .aboutme {
+    .aboutme__container {
+      .aboutme__box {
+        p {
+          font-size: 0.9rem;
         }
       }
     }

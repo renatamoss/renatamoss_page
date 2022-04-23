@@ -60,4 +60,18 @@ export default {
     max-width: 100%;
   }
 }
+
+@media (max-width: 576px) {
+  .content__box {
+    .content__title {
+      font-size: 0.9rem;
+    }
+    .content__subtitle {
+      font-size: 0.9rem;
+    }
+    .content__text {
+      font-size: 0.9rem;
+    }
+  }
+}
 </style>

@@ -61,7 +61,7 @@ export default {
   .image__default--banner-page {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
       rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    width: 60%;
+    width: 100%;
   }
 }
 
@@ -71,23 +71,21 @@ export default {
   }
 }
 
-@media (max-width: 1200px) {
-  .image__default--banner-page {
-    min-width: 90%;
-  }
-}
-
 @media (max-width: 992px) {
   .image__default--home-woman {
     max-width: 70%;
   }
 
   .image__default--photo-renata {
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 4rem 0;
+    max-width: 80%;
   }
 
-  .image__default--banner-page {
-    min-width: 100%;
+}
+
+@media (max-width: 576px) {
+  .image__default--home-woman {
+    max-width: 60%;
   }
 }
 </style>

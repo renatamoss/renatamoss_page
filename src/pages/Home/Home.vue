@@ -57,7 +57,7 @@ export default {
   padding: 10rem 0 2rem 0;
   position: relative;
   width: 100%;
-  z-index: 2;
+  z-index: 2; //esconder o button back desktop
 
   &__container {
     display: flex;
@@ -89,7 +89,6 @@ export default {
 
 @media (max-width: 992px) {
   .home {
-    height: 80vh;
     padding: 0;
 
     .home__container {

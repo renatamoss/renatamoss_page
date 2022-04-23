@@ -49,7 +49,6 @@ export default {
   align-items: center;
 
   height: 50%;
-  padding-left: 0.5rem;
 
   ul {
     margin: 0;

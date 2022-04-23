@@ -49,36 +49,35 @@ export default {
   letter-spacing: 0.1rem;
   margin: 1rem 0.5rem 0 0.5rem;
   text-align: center;
-  width: 8rem;
 }
 
 .button__item--github,
 .button__item--preview {
   padding-left: 0.5rem;
+    width: 7rem;
 }
 
 .button__item--projects,
 .button__item--aboutme {
   background-color: var(--button-bg-color-1);
-  font-size: 0.8rem;
   height: 3rem;
   margin-top: 1rem;
   padding-left: 0.5rem;
   width: 15rem;
 }
 
-
 .button__item--allprojects {
   background-color: var(--button-bg-color-3);
   margin: 0 auto 4rem auto;
   padding-left: 0.5rem;
-  width: 8rem;
+  width: 7rem;
 }
 
 .button__item--back {
   background-color: var(--button-bg-color-3);
   height: 3rem;
-  width: 8rem;
+  margin: 0;
+  width: 3rem;
   opacity: 0.6;
 }
 
@@ -109,10 +108,24 @@ export default {
   }
 }
 
-/* @media (max-width: 992px) {
+@media (max-width: 576px) {
+  .button__item {
+    font-size: 0.7rem;
+  }
+
   .button__item--aboutme,
   .button__item--projects {
-    display: none;
-  } */
-/* } */
+    height: 2rem;
+    width: 14rem;
+  }
+
+  .button__item--allprojects {
+    width: 6rem;
+  }
+
+  .button__item--projects {
+    margin-top: 0.5rem;
+  }
+
+}
 </style>

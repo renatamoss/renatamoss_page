@@ -1,8 +1,11 @@
 <template>
   <div class="project__container">
     <Search @searching="searching" />
-    <p class="project__total" v-if="projectsSearch.length === projectsList.length">
-      Total de {{ projectsSearch.length }} projetos. 
+    <p
+      class="project__total"
+      v-if="projectsSearch.length === projectsList.length"
+    >
+      Total de {{ projectsSearch.length }} projetos.
     </p>
     <p class="project__total" v-else-if="projectsSearch.length === 0">
       Nenhum projeto encontrado com "{{ search.toUpperCase() }} ".
@@ -95,8 +98,17 @@ export default {
 
   .project__total {
     color: var(--third-text-color);
+    font-size: 1rem;
     font-weight: bold;
     padding: 0.5rem 1rem 1rem 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .project__container {
+    .project__total {
+      font-size: 0.8rem;
+    }
   }
 }
 </style>
