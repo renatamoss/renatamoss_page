@@ -2,7 +2,7 @@
   <div class="button__back-desktop">
     <Button
       class="button__item button__item--back"
-      href="#home"
+      href="#header"
       title=""
       symbol="bi bi-arrow-up-circle-fill"
     />
@@ -49,7 +49,7 @@ export default {
 @media (max-width: 576px) {
   .button__back-desktop {
     margin-right: 1rem;
-    padding-bottom: 0.5rem;
+    padding: .5rem 0 1.5rem 0 ;
     position: relative;
   }
 }

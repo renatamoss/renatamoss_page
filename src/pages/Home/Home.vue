@@ -90,7 +90,7 @@ export default {
 @media (max-width: 992px) {
   .home {
     padding: 0;
-    height: 80vh;
+    height: 85vh;
 
     .home__container {
       border-radius: 0;
@@ -99,7 +99,7 @@ export default {
       width: 100%;
 
       .home__box {
-        padding: 1rem;
+        padding: 2rem;
       }
     }
   }
