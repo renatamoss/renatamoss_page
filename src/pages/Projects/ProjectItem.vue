@@ -142,7 +142,7 @@ export default {
     }
 
     .project__content {
-      padding-bottom: 4rem;
+      padding-bottom: 3rem;
 
       .project__buttons {
         display: flex;

@@ -8,7 +8,7 @@ export default {
     return {
       bannerText: "",
       bannerPhrase:
-        "Olá! Meu nome é Renata e seja bem-vindo(a) ao meu Portfólio!",
+        "Olá! Seja bem-vindo(a) ao meu Portfólio!",
       bannerSpeed: 100,
       charIndex: 0,
     };
@@ -31,7 +31,7 @@ export default {
 .banner__text {
   color: var(--title-color-6);
   font-family: "Righteous", cursive;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: lighter;
   height: 68px;
   letter-spacing: 0.06rem;
@@ -41,7 +41,7 @@ export default {
 
 @media (max-width: 576px) {
   .banner__text {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.3;
   }
 }

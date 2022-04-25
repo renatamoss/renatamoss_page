@@ -93,7 +93,7 @@ export default {
 
 <style lang="scss" scoped>
 .project__container {
-    background-color: var(--bg-color-4);
+  background-color: var(--bg-color-4);
   text-align: center;
   width: 100%;
 

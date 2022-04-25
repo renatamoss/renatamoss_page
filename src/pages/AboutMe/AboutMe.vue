@@ -1,6 +1,6 @@
 <template>
   <div class="aboutme" id="aboutme">
-    <Title title="Sobre Mim" subtitle="Olá!" subtitle-class="subtitleAboutme" />
+    <Title title="Sobre Mim" subtitle="Muito prazer, eu sou Renata!" subtitle-class="subtitleAboutme" />
     <div class="aboutme__container">
       <div class="aboutme__box">
         <p>
@@ -48,8 +48,6 @@ export default {
 <style lang="scss" scoped>
 .aboutme {
   background-color: var(--bg-color-5);
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   color: var(--secundary-text-color);
   height: 100%;
   width: 100%;
@@ -71,7 +69,7 @@ export default {
       display: flex;
       flex-direction: column;
       align-items: center;
-      
+
       height: auto;
       width: 50%;
 

@@ -73,13 +73,13 @@ export default {
   width: 7rem;
 }
 
-.button__item--back-home,
-.button__item--back-header {
+.button__item--back-home {
   background-color: var(--button-bg-color-3);
   height: 3rem;
   margin: 0;
-  width: 3rem;
   opacity: 0.6;
+  right: 0;
+  width: 3rem;
 }
 
 .button__item--back-header {
@@ -108,7 +108,7 @@ export default {
     transform: scale(1.03);
   }
 
-  .button__item--back:hover {
+  .button__item--back-home:hover {
     background-color: var(--button-bg-color-hover-3);
     transform: scale(1.1);
   }
@@ -121,6 +121,12 @@ export default {
   }
   .button__item--back-header {
     display: flex;
+    background-color: var(--button-bg-color-3);
+    height: 3rem;
+    margin: 0;
+    opacity: 0.6;
+    right: 0;
+    width: 3rem;
   }
 }
 
