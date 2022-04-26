@@ -1,6 +1,6 @@
 <template>
   <div class="aboutme" id="aboutme">
-    <Title title="Sobre Mim" subtitle="Muito prazer, eu sou Renata!" subtitle-class="subtitleAboutme" />
+    <Title title="Sobre Mim" subtitle="Um pouco sobre minha trajetória" subtitle-class="subtitleAboutme" />
     <div class="aboutme__container">
       <div class="aboutme__box">
         <p>

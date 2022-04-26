@@ -38,7 +38,7 @@ export default {
     transition: all 0.1s linear;
   }
 
-  .image__default--home-woman {
+  .image__default--home-study {
     width: 100%;
   }
 
@@ -49,21 +49,14 @@ export default {
     width: 100%;
   }
 
-  .image__default--home-study {
-    padding-top: 1rem;
-    width: 50%;
-  }
-
   .image__default--vertical {
     height: auto;
   }
 
   .image__default--banner-page {
-   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 100%;
   }
-
-
 }
 
 @media (min-width: 992px) {
@@ -73,7 +66,7 @@ export default {
 }
 
 @media (max-width: 992px) {
-  .image__default--home-woman {
+  .image__default--home-study {
     max-width: 70%;
   }
 
@@ -82,17 +75,5 @@ export default {
     max-width: 80%;
   }
 }
-
-@media (max-width: 576px) {
-  .image__default--home-woman {
-    max-width: 60%;
-  }
-}
-
-/* @media screen and (max-height: 645px) { 
-  .image__default--home-woman {
-    display: none;
-  }
-} */
 
 </style>

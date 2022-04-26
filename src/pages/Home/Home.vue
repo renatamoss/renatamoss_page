@@ -2,17 +2,12 @@
   <div class="home" id="home">
     <div class="home__container">
       <Images
-        className="image__default image__default--home-woman"
-        fileName="image-home-woman.png"
+        className="image__default image__default--home-study"
+        fileName="image-home-study.png"
         descriptionImage="Woman sitting on chair"
       />
       <div class="home__box">
         <BannerHome />
-        <Images
-          className="image__default image__default--home-study"
-          fileName="image-home-study.png"
-          descriptionImage="Topic drawing"
-        />
         <Button
           className="button__item button__item--aboutme"
           href="#aboutme"
@@ -58,6 +53,8 @@ export default {
   z-index: 2; //esconder o button back desktop
 
   &__container {
+    background-color: var(--bg-color-2);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -97,7 +94,7 @@ export default {
       width: 100%;
 
       .home__box {
-        padding: 1rem 2rem 0 2rem;
+        padding-top: 1rem;
       }
     }
   }
