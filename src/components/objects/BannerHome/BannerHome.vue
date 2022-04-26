@@ -45,4 +45,11 @@ export default {
     line-height: 1.3;
   }
 }
+
+/*max-height*/
+@media screen and (max-height: 700px) {
+  .banner__text {
+    font-size: 1.2rem;
+  }
+}
 </style>

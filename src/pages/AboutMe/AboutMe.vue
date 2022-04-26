@@ -22,13 +22,9 @@
           Vercel. E já desenvolvi projetos pessoais com PHP, SQL e MySQL.
         </p>
         <p>
-          Estou trabalhando na construção do meu portfólio, estando sempre em
-          busca de novos desafios, que me permitam ampliar habilidades e aprender
-          diferentes tecnologias.
-        </p>
-        <p>
           Sou uma pessoa simples e que acredita muito no lado positivo das
-          coisas! Fique à vontade para me adicionar em minhas redes sociais.
+          coisas! Fique à vontade para me adicionar em minhas redes
+          sociais.
         </p>
       </div>
       <Images
