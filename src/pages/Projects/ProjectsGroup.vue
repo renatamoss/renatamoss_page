@@ -33,6 +33,7 @@
         :key="index"
       />
     </ul>
+    <ButtonBack />
   </div>
 </template>
 
@@ -42,12 +43,14 @@ import Search from "../../components/objects/Search/Search.vue";
 import Button from "../../components/shared/Button/Button.vue";
 import ProjectItem from "./ProjectItem.vue";
 import projectList from "./ProjectsList.js";
+import ButtonBack from "@/components/objects/ButtonBack/ButtonBack.vue";
 
 export default {
   components: {
     Search,
     Button,
     ProjectItem,
+    ButtonBack,
   },
 
   data() {

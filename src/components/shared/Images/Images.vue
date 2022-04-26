@@ -71,7 +71,7 @@ export default {
   }
 
   .image__default--photo-renata {
-    margin: 1rem 0 4rem 0;
+    margin-top: 1rem;
     max-width: 80%;
   }
 }

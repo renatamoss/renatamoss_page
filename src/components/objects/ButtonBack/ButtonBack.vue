@@ -1,13 +1,13 @@
 <template>
   <div class="button__back-desktop">
     <Button
-      class="button__item button__item--back-home"
+      class="button__item button__item--back button__item--back-home"
       href="#home"
       title=""
       symbol="bi bi-arrow-up-circle-fill"
     />
     <Button
-      class="button__item button__item--back-header"
+      class="button__item button__item--back button__item--back-header"
       href="#header"
       title=""
       symbol="bi bi-arrow-up-circle-fill"
@@ -38,6 +38,14 @@ export default {
   position: fixed;
   right: 0;
   z-index: 1;
+
+  .button__item--back-home {
+    display: flex;
+  }
+
+  .button__item--back-header {
+    display: none;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -49,6 +57,14 @@ export default {
 @media (max-width: 992px) {
   .button__back-desktop {
     margin-right: 1rem;
+
+    .button__item--back-home {
+      display: none;
+    }
+
+    .button__item--back-header {
+      display: flex;
+    }
   }
 }
 

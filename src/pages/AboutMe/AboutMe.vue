@@ -1,6 +1,10 @@
 <template>
   <div class="aboutme" id="aboutme">
-    <Title title="Sobre Mim" subtitle="Um pouco sobre minha trajetória" subtitle-class="subtitleAboutme" />
+    <Title
+      title="Sobre Mim"
+      subtitle="Minha trajetória como Dev"
+      subtitle-class="subtitleAboutme"
+    />
     <div class="aboutme__container">
       <div class="aboutme__box">
         <p>
@@ -14,8 +18,13 @@
           e Bootstrap.
         </p>
         <p>
-          Também tenho conhecimentos das tecnologias Gimp, Figma, Heroku e
+          Também tenho estudado algumas tecnologias como Gimp, Figma, Heroku e
           Vercel. E já desenvolvi projetos pessoais com PHP, SQL e MySQL.
+        </p>
+        <p>
+          Estou trabalhando na construção do meu portfólio, estando sempre em
+          busca de novos desafios, que me permitam ampliar habilidades e aprender
+          diferentes tecnologias.
         </p>
         <p>
           Sou uma pessoa simples e que acredita muito no lado positivo das
@@ -28,6 +37,7 @@
         descriptionImage="Renata photo"
       />
     </div>
+    <ButtonBack />
   </div>
 </template>
 
@@ -35,11 +45,13 @@
 <script>
 import Title from "@/components/shared/Title/Title.vue";
 import Images from "../../components/shared/Images/Images.vue";
+import ButtonBack from "@/components/objects/ButtonBack/ButtonBack.vue";
 
 export default {
   components: {
     Title,
     Images,
+    ButtonBack,
   },
 };
 </script>

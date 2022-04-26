@@ -73,17 +73,13 @@ export default {
   width: 7rem;
 }
 
-.button__item--back-home {
+.button__item--back {
   background-color: var(--button-bg-color-3);
   height: 3rem;
   margin: 0;
   opacity: 0.6;
   right: 0;
   width: 3rem;
-}
-
-.button__item--back-header {
-  display: none;
 }
 
 /*hover*/
@@ -111,22 +107,6 @@ export default {
   .button__item--back-home:hover {
     background-color: var(--button-bg-color-hover-3);
     transform: scale(1.1);
-  }
-}
-
-/*display button back home*/
-@media (max-width: 992px) {
-  .button__item--back-home {
-    display: none;
-  }
-  .button__item--back-header {
-    display: flex;
-    background-color: var(--button-bg-color-3);
-    height: 3rem;
-    margin: 0;
-    opacity: 0.6;
-    right: 0;
-    width: 3rem;
   }
 }
 

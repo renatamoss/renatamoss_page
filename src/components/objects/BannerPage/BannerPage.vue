@@ -26,6 +26,7 @@ export default {
   margin: auto;
   width: 60%;
 }
+
 @media (max-width: 1200px) {
   .banner_page {
     padding: 1rem 0 4rem 0;
@@ -42,7 +43,7 @@ export default {
 
 @media (max-width: 576px) {
   .banner_page {
-    padding: 1rem;
+    padding: 0 1rem 1rem 1rem;
     width: 100%;
   }
 }
