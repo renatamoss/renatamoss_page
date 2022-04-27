@@ -46,6 +46,7 @@ export default {
   border-radius: 0.4rem;
   font-size: 0.8rem;
   font-weight: bolder;
+  height: 3rem;
   letter-spacing: 0.1rem;
   margin: 1rem 0.5rem 0 0.5rem;
   text-align: center;
@@ -54,7 +55,6 @@ export default {
 .button__item--projects,
 .button__item--aboutme {
   background-color: var(--button-bg-color-1);
-  height: 3rem;
   margin-top: 1rem;
   padding-left: 0.5rem;
   width: 15rem;
@@ -75,7 +75,6 @@ export default {
 
 .button__item--back {
   background-color: var(--button-bg-color-3);
-  height: 3rem;
   margin: 0;
   opacity: 0.6;
   right: 0;
