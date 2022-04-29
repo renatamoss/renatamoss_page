@@ -6,32 +6,36 @@
       subtitle-class="subtitleAboutme"
     />
     <div class="aboutme__container">
-      <div class="aboutme__box">
-        <p>
-          Com formação voltada para o mundo dos negócios & relacionamentos, há
-          um ano atrás escolhi transacionar minha carreira para o universo da
-          tecnologia.
-        </p>
-        <p>
-          Em minha jornada tech, concluí trilhas de formação de Front-End, e
-          atualmente estou desenvolvendo com Vue Js, HTML, CSS, SASS, JavaScript
-          e Bootstrap.
-        </p>
-        <p>
-          Também tenho estudado algumas tecnologias como Gimp, Figma, Heroku e
-          Vercel. E já desenvolvi projetos pessoais com PHP, SQL e MySQL.
-        </p>
-        <p>
-          Sou uma pessoa simples e que acredita muito no lado positivo das
-          coisas! Fique à vontade para me adicionar em minhas redes
-          sociais.
-        </p>
-      </div>
-      <Images
-        className="image__default image__default--photo-renata"
-        fileName="renata-photo.jpg"
-        descriptionImage="Renata photo"
-      />
+      <transition name="fade-aboutme">
+        <div class="aboutme__box" v-show="showAboutMe">
+          <p>
+            Com formação voltada para o mundo dos negócios & relacionamentos, há
+            um ano atrás escolhi transacionar minha carreira para o universo da
+            tecnologia.
+          </p>
+          <p>
+            Em minha jornada tech, concluí trilhas de formação de Front-End, e
+            atualmente estou desenvolvendo com Vue Js, HTML, CSS, SASS,
+            JavaScript e Bootstrap.
+          </p>
+          <p>
+            Também tenho conhecimentos de tecnologias como Gimp, Figma, Heroku e
+            Vercel. E já desenvolvi projetos pessoais com PHP, SQL e MySQL.
+          </p>
+          <p>
+            Sou uma pessoa simples e que acredita muito no lado positivo das
+            coisas! Fique à vontade para me adicionar em minhas redes sociais.
+          </p>
+        </div>
+      </transition>
+      <transition name="fade-photo">
+        <Images
+          v-show="showAboutMe"
+          className="image__default image__default--photo-renata"
+          fileName="renata-photo.jpg"
+          descriptionImage="Renata photo"
+        />
+      </transition>
     </div>
     <ButtonBack />
   </div>
@@ -49,6 +53,22 @@ export default {
     Images,
     ButtonBack,
   },
+  data() {
+    return {
+      showAboutMe: false,
+    };
+  },
+  methods: {
+    handleScroll() {
+      this.showAboutMe = true;
+    },
+  },
+  mounted() {
+    document.addEventListener("scroll", this.handleScroll);
+  },
+  beforeUnmount() {
+    document.addEventListener("scroll", this.handleScroll);
+  },
 };
 </script>
 
@@ -61,8 +81,9 @@ export default {
   width: 100%;
   z-index: 1;
 
-  margin-top: -8rem;
+  margin-top: -5rem;
   padding: 3rem 0;
+
 
   &__container {
     display: flex;
@@ -133,5 +154,43 @@ export default {
       }
     }
   }
+}
+
+/*transition photo */
+@keyframes photo-come-down {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  95% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) easy;
+  }
+}
+.fade-photo-enter,
+.fade-photo-enter-active {
+  animation: photo-come-down ease-in 1s;
+}
+
+/*transition aboutme */
+@keyframes aboutme-come-down {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  95% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) easy;
+  }
+}
+.fade-aboutme-enter,
+.fade-aboutme-enter-active {
+  animation: aboutme-come-down ease-in 1s;
 }
 </style>

@@ -50,6 +50,7 @@ export default {
   letter-spacing: 0.1rem;
   margin: 1rem 0.5rem 0 0.5rem;
   text-align: center;
+  transition: .2s ease-in;
 }
 
 .button__item--projects,
@@ -95,6 +96,7 @@ export default {
 
   .button__item--aboutme:hover,
   .button__item--projects:hover {
+    background-color: var(--button-bg-color-hover-3);
     transform: scale(1.03);
   }
 

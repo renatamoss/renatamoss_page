@@ -30,7 +30,7 @@ export default {
   width: 100%;
   z-index: 1;
 
-  margin-top: -8rem;
+  margin-top: -5rem;
   padding: 3rem 0;
 
   &__back-desktop {

@@ -1,5 +1,5 @@
 <template>
-  <nav class="header" id="header">
+  <nav class="header" :class="{ header_collor }" id="header">
     <div class="header__container">
       <TitleHeader />
 
@@ -24,11 +24,39 @@ export default {
     LinksLine,
     Dropdown,
   },
+  data() {
+    return {
+      showAboutMe: false,
+      header_collor: false,
+    };
+  },
+  methods: {
+    handleScroll() {
+      if (window.scrollY > 300) {
+        this.header_collor = true;
+      } else if (window.scrollY < 300) {
+        this.header_collor = false;
+      }
+    },
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  beforeUnmount() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
 };
 </script>
 
 
+
 <style lang="scss" scoped>
+.header_collor {
+  background-color: rgba(38, 58, 109, 0.8) !important;
+  height: 5rem !important;
+  transition: 0.4s ease-in;
+}
+
 .header {
   background-color: var(--bg-color-1);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
@@ -37,6 +65,7 @@ export default {
   position: fixed;
   width: 100%;
   z-index: 3;
+  transition: 0.4s ease-in;
 
   &__container {
     display: flex;

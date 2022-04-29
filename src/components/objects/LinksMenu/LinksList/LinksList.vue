@@ -66,6 +66,7 @@ export default {
     height: 2.8rem;
     margin-right: 0.5rem;
     width: 2.8rem;
+    transition: .2s ease-in;
   }
 }
 

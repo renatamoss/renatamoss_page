@@ -35,10 +35,10 @@ export default {
     border-radius: 0.4rem;
     height: auto;
     width: 100%;
-    transition: all 0.1s linear;
+    transition: 0.2s ease-in;
   }
 
-  .image__default--home-study {
+  .image__default--home {
     width: 100%;
   }
 
@@ -66,14 +66,19 @@ export default {
 }
 
 @media (max-width: 992px) {
-  .image__default--home-study {
+  .image__default--home {
     max-width: 70%;
   }
 
   .image__default--photo-renata {
-    margin-top: 1rem;
+    margin: 1rem 0 3rem 0;
     max-width: 80%;
   }
 }
 
+@media (max-width: 576px) {
+  .image__default--photo-renata {
+    margin-bottom: 0;
+  }
+}
 </style>

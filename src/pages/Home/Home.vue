@@ -1,27 +1,37 @@
 <template>
   <div class="home" id="home">
     <div class="home__container">
-      <Images
-        className="image__default image__default--home-study"
-        fileName="image-home-study.png"
-        descriptionImage="Woman sitting on chair"
-      />
+      <transition name="fade-image">
+        <Images
+          v-show="showHome"
+          className="image__default image__default--home"
+          :class="{ scroll__image }"
+          fileName="image-home-study.png"
+          descriptionImage="Woman sitting on chair"
+        />
+      </transition>
       <div class="home__box">
         <BannerHome />
-        <Button
-          className="button__item button__item--aboutme"
-          href="#aboutme"
-          title="Sobre Mim"
-          target="_self"
-          symbol="bi bi-plus-circle-fill"
-        />
-        <Button
-          className="button__item button__item--projects"
-          href="#projects"
-          title="Conheça Meus Projetos"
-          target="_self"
-          symbol="bi bi-plus-circle-fill"
-        />
+        <transition name="fade-button">
+          <Button
+            v-show="showHome"
+            className="button__item button__item--aboutme"
+            href="#aboutme"
+            title="Sobre Mim"
+            target="_self"
+            symbol="bi bi-plus-circle-fill"
+          />
+        </transition>
+        <transition name="fade-button">
+          <Button
+            v-show="showHome"
+            className="button__item button__item--projects"
+            href="#projects"
+            title="Conheça Meus Projetos"
+            target="_self"
+            symbol="bi bi-plus-circle-fill"
+          />
+        </transition>
       </div>
     </div>
   </div>
@@ -39,6 +49,29 @@ export default {
     BannerHome,
     Button,
   },
+  data() {
+    return {
+      showHome: false,
+      scroll__image: false,
+    };
+  },
+  methods: {
+    handleScroll() {
+      if (window.scrollY > 500) {
+        this.scroll__image = false;
+        console.log("desceu");
+      } else if (window.scrollY < 300) {
+        this.scroll__image = true;
+      }
+    },
+  },
+  mounted() {
+    this.showHome = true;
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  beforeUnmount() {
+    this.showHome = false;
+  },
 };
 </script>
 
@@ -50,11 +83,14 @@ export default {
   padding: 10rem 0 2rem 0;
   position: relative;
   width: 100%;
-  z-index: 2; //esconder o button back desktop
+  z-index: 2;
+
+  .scroll__image {
+    transform: scale(1.2);
+    transition: 0.4s ease-in;
+  }
 
   &__container {
-    background-color: var(--bg-color-2);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -101,9 +137,47 @@ export default {
 }
 
 /*max-height*/
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 500px) {
   .home {
     height: 100%;
   }
+}
+
+/*transition image */
+@keyframes image-come-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+  95% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) easy;
+  }
+}
+.fade-image-enter,
+.fade-image-enter-active {
+  animation: image-come-down ease-in 1s;
+}
+
+/*transition button */
+@keyframes button-come-down {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  95% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) easy;
+  }
+}
+.fade-button-enter,
+.fade-button-enter-active {
+  animation: button-come-down ease-in 1s;
 }
 </style>

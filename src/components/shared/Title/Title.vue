@@ -26,7 +26,7 @@ export default {
 <style lang="scss" scoped>
 .title__box {
   height: auto;
-  padding-top: 8rem;
+  padding-top: 5rem;
   width: 100%;
 
   .title {
