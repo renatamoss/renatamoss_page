@@ -1,19 +1,19 @@
 <template>
   <div class="banner_page">
-    <transition name="fade-banner__page">
-      <a
-        href="https://www.instagram.com/renatamoss.ti"
-        target="_blank"
-        title="Instagram @renatamoss.ti"
-      >
+    <a
+      href="https://www.instagram.com/renatamoss.ti"
+      target="_blank"
+      title="Instagram @renatamoss.ti"
+    >
+      <transition name="fade-banner__page">
         <Images
           v-show="showBannerPage"
           className="image__default image__default--banner-page"
           fileName="image-banner-page.png"
           descriptionImage="Banner Of Page"
         />
-      </a>
-    </transition>
+      </transition>
+    </a>
   </div>
 </template>
 

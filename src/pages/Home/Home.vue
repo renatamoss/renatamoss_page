@@ -88,7 +88,7 @@ export default {
   z-index: 2;
 
   .scroll__image {
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition: 0.4s ease-in;
   }
 
@@ -132,7 +132,7 @@ export default {
       width: 100%;
 
       .home__box-image {
-        height: 188px;
+        height: 225px;
       }
 
       .home__box-banner {
