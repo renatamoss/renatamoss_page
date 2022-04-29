@@ -80,7 +80,7 @@ export default {
   .dropdown {
     display: block;
     height: 50%;
-    /* opacity: 0.9; */
+    opacity: 0.8;
     padding-left: 1rem;
     position: relative;
     width: 3.75rem;

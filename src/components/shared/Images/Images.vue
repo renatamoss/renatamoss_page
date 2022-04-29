@@ -39,13 +39,17 @@ export default {
   }
 
   .image__default--home {
+    border-radius: 400px;
+    background: url("../../../../public/images/fundo-stars.jpeg");
+    background-size: cover;
+    background-position: center;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    padding: 3rem;
     width: 100%;
   }
 
   .image__default--photo-renata {
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 100%;
   }
 
@@ -67,7 +71,8 @@ export default {
 
 @media (max-width: 992px) {
   .image__default--home {
-    max-width: 70%;
+    max-width: 60%;
+    padding: 2rem !important;
   }
 
   .image__default--photo-renata {

@@ -84,7 +84,6 @@ export default {
   margin-top: -5rem;
   padding: 3rem 0;
 
-
   &__container {
     display: flex;
     flex-direction: row;
@@ -172,7 +171,7 @@ export default {
 }
 .fade-photo-enter,
 .fade-photo-enter-active {
-  animation: photo-come-down ease-in 1s;
+  animation: photo-come-down ease-in 1.2s;
 }
 
 /*transition aboutme */
@@ -191,6 +190,6 @@ export default {
 }
 .fade-aboutme-enter,
 .fade-aboutme-enter-active {
-  animation: aboutme-come-down ease-in 1s;
+  animation: aboutme-come-down ease-in 1.2s;
 }
 </style>

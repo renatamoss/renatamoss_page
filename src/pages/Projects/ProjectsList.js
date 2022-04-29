@@ -65,6 +65,28 @@ export default [
       }
     },
   },
+      // Hdc Agengy  //
+      {
+        image: {
+          verticalAlign: true,
+          fileName: "hdc_agency.jpg",
+          title: "Image Hdc Agengy ",
+        },
+        content: {
+          title: "Hdc Agengy ",
+          subtitle: "Site Web | Bootstrap ",
+          text:
+            "Landing Pag utilizando framework Bootstrap, onde foram estudadas funcionalidades como navbar, dropdown, carousel, grids, cards e forms.",
+        },
+        buttons: {
+          github: {
+            hrefName: "landing_page_bootstrap.git",
+          },
+          preview: {
+            hrefName: "https://landing-page-bootstrap-five.vercel.app/",
+          },
+        },
+      },
   //calculator_project project //
   {
     image: {

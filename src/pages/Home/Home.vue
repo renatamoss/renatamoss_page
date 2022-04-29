@@ -1,16 +1,18 @@
 <template>
   <div class="home" id="home">
     <div class="home__container">
-      <transition name="fade-image">
-        <Images
-          v-show="showHome"
-          className="image__default image__default--home"
-          :class="{ scroll__image }"
-          fileName="image-home-study.png"
-          descriptionImage="Woman sitting on chair"
-        />
-      </transition>
-      <div class="home__box">
+      <div class="home__box-image">
+        <transition name="fade-image">
+          <Images
+            v-show="showHome"
+            className="image__default image__default--home"
+            :class="{ scroll__image }"
+            fileName="image-home-woman.png"
+            descriptionImage="Woman sitting on chair"
+          />
+        </transition>
+      </div>
+      <div class="home__box-banner">
         <BannerHome />
         <transition name="fade-button">
           <Button
@@ -86,7 +88,7 @@ export default {
   z-index: 2;
 
   .scroll__image {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.4s ease-in;
   }
 
@@ -101,7 +103,7 @@ export default {
     padding: 2rem 0;
     width: 60%;
 
-    .home__box {
+    .home__box-banner {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -129,7 +131,11 @@ export default {
       justify-content: center;
       width: 100%;
 
-      .home__box {
+      .home__box-image {
+        height: 188px;
+      }
+
+      .home__box-banner {
         padding-top: 1rem;
       }
     }
