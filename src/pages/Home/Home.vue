@@ -88,7 +88,7 @@ export default {
   z-index: 2;
 
   .scroll__image {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.4s ease-in;
   }
 
@@ -131,10 +131,6 @@ export default {
       justify-content: center;
       width: 100%;
 
-      .home__box-image {
-        height: 225px;
-      }
-
       .home__box-banner {
         padding-top: 1rem;
       }
@@ -143,7 +139,7 @@ export default {
 }
 
 /*max-height*/
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 600px) {
   .home {
     height: 100%;
   }

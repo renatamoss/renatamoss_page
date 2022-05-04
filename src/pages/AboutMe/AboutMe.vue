@@ -2,7 +2,7 @@
   <div class="aboutme" id="aboutme">
     <Title
       title="Sobre Mim"
-      subtitle="Minha trajetória como Dev"
+      subtitle="Minha Jornada Tech"
       subtitle-class="subtitleAboutme"
     />
     <div class="aboutme__container">

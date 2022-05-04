@@ -71,7 +71,7 @@ export default {
 
 @media (max-width: 992px) {
   .image__default--home {
-    max-width: 60%;
+    max-width: 70%;
     padding: 2rem !important;
   }
 
