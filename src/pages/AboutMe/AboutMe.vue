@@ -1,40 +1,30 @@
 <template>
   <div class="aboutme" id="aboutme">
-    <Title
-      title="Sobre Mim"
-      subtitle="Minha Jornada Tech"
-      subtitle-class="subtitleAboutme"
-    />
+    <Title title="Sobre Mim" subtitle="Minha Jornada Tech" subtitle-class="subtitleAboutme" />
     <div class="aboutme__container">
       <transition name="fade-aboutme">
         <div class="aboutme__box" v-show="showAboutMe">
           <p>
-            Com formação voltada para o mundo dos negócios & relacionamentos, há
-            um ano atrás escolhi transacionar minha carreira para o universo da
-            tecnologia.
+            Após anos atuando profissionalmente no mundo dos negócios & relacionamentos, eu escolhi
+            transacionar minha carreira para o universo da tecnologia.
           </p>
           <p>
-            Em minha jornada tech, concluí trilhas de formação de Front-End, e
-            atualmente estou desenvolvendo com Vue Js, HTML, CSS, SASS,
-            JavaScript e Bootstrap.
+            Para mim, a vida só faz sentido quando vivida com o coração. Encontrar o que traz brilho aos olhos, viver
+            com propósito, valorizar os momentos cotidianos, buscar formas cada vez mais sustentáveis de se
+            realizar, seja como mãe, filha, amiga e profissional. Acredito que quando vivemos com propósito, tudo a
+            nossa
+            volta passa a ser, naturalmente, mais harmônico.
           </p>
           <p>
-            Também tenho conhecimentos de tecnologias como Gimp, Figma, Heroku e
-            Vercel. E já desenvolvi projetos pessoais com PHP, SQL e MySQL.
-          </p>
-          <p>
-            Sou uma pessoa simples e que acredita muito no lado positivo das
+            Nesta nova jornada tech, estou em busca de desafios que me permitam ampliar habilidades e aprender
+            diferentes tecnologias. Sou uma pessoa simples e que acredita muito no lado positivo das
             coisas! Fique à vontade para me adicionar em minhas redes sociais.
           </p>
         </div>
       </transition>
       <transition name="fade-photo">
-        <Images
-          v-show="showAboutMe"
-          className="image__default image__default--photo-renata"
-          fileName="renata-photo.jpg"
-          descriptionImage="Renata photo"
-        />
+        <Images v-show="showAboutMe" className="image__default image__default--photo-renata" fileName="renata-photo.jpg"
+          descriptionImage="Renata photo" />
       </transition>
     </div>
     <ButtonBack />
@@ -161,14 +151,17 @@ export default {
     opacity: 0;
     transform: translateX(10rem);
   }
+
   95% {
     opacity: 0.9;
   }
+
   100% {
     opacity: 1;
     transform: translateX(0) easy;
   }
 }
+
 .fade-photo-enter,
 .fade-photo-enter-active {
   animation: photo-come-down ease-in 1.2s;
@@ -180,14 +173,17 @@ export default {
     opacity: 0;
     transform: translateX(-10rem);
   }
+
   95% {
     opacity: 0.9;
   }
+
   100% {
     opacity: 1;
     transform: translateX(0) easy;
   }
 }
+
 .fade-aboutme-enter,
 .fade-aboutme-enter-active {
   animation: aboutme-come-down ease-in 1.2s;
